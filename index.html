@@ -2,7 +2,7 @@
 <html>
 
 <script type="text/javascript" src="script.js"></script>
-<h1 align="center" style="font-family:verdana;"> A SOUND PALETTE 
+<!-- <h1 align="center" style="font-family:verdana;"> A SOUND PALETTE  -->
 <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
 </h1>
 
@@ -11,7 +11,7 @@
 
 <body bgcolor="EFEFEF">
 
-<p align="center" style="font-family:verdana;"> Press keys C D E G A to play music notes. Each music note has a correlated color. For example, music note C is red, and music note D is yellow. In addition, below you'll hear and see the result of your art piece.</p>
+<!-- <p align="center" style="font-family:verdana;"> Press keys C D E G A to play music notes. Each music note has a correlated color. For example, music note C is red, and music note D is yellow. In addition, below you'll hear and see the result of your art piece.</p> -->
 
 <style>
 h1{
@@ -26,7 +26,7 @@ p  {
 }
 
 svg{
-  margin-top:1em;
+  margin-top:12em;
   margin-right: 28%;
   margin-left: 28%;
 }
@@ -57,12 +57,12 @@ h3{
 
 
 
-<svg style="text-align:center;" width="1000" height="200">
-  <circle cx="100" cy="100" r="75" fill="rgb(196,51,51)" value="PLAY" onclick="playC()"/>
-  <circle cx="250" cy="100" r="75" fill="rgb(255,217,102)" value="PLAY" onclick="playD()"/>
-  <circle cx="400" cy="100" r="75" fill="#6C9EEB" value="PLAY" onclick="playE()"/>
-  <circle cx="550" cy="100" r="75" fill="#000000" value="PLAY" onclick="playG()"/>
-  <circle cx="700" cy="100" r="75" fill="#FFFFFF" value="PLAY" onclick="playA()"/>
+<svg style="text-align:center;" width="800" height="200">
+  <circle cx="100" cy="100" r="50" fill="#000000" value="PLAY" onclick="playC()"/>
+  <circle cx="230" cy="100" r="50" fill="rgb(196,51,51)" value="PLAY" onclick="playD()"/>
+  <circle cx="360" cy="100" r="50" fill="rgb(255,217,102)" value="PLAY" onclick="playE()"/>
+  <circle cx="490" cy="100" r="50" fill="#6C9EEB" value="PLAY" onclick="playG()"/>
+  <circle cx="620" cy="100" r="50" fill="#FFFFFF" value="PLAY" onclick="playA()"/>
 </svg>
 
 
@@ -76,11 +76,10 @@ h3{
   function playC(){
        var audio = document.getElementById("audioC");
        audioC.play();
-       mixcolor();
+       // mixcolor();
                  }
   </script>
-  <audio id="audioC" src="c.m4a" type="audio/m4a" > 
-  </audio>
+  <audio id="audioC" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/C1.m4a"> </audio>
 
 
 <script>
@@ -89,7 +88,7 @@ h3{
        audioD.play();
                  }
   </script>
-  <audio id="audioD" src="D.m4a" type="audio/m4a" > </audio>
+  <audio id="audioD" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/D.m4a"> </audio>
 
 
 <script>
@@ -98,7 +97,7 @@ h3{
        audioE.play();
                  }
   </script>
-  <audio id="audioE" src="E.m4a" type="audio/m4a"> </audio>
+  <audio id="audioE" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/E.m4a"> </audio>
 
 
 
@@ -108,7 +107,7 @@ h3{
        audioG.play();
                  }
   </script>
-  <audio id="audioG" src="G.m4a" type="audio/m4a"> </audio>
+  <audio id="audioG" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/G.m4a"> </audio>
 
 
 
@@ -118,7 +117,7 @@ h3{
        audioA.play();
                  }
   </script>
-  <audio id="audioA" src="A.m4a" type="audio/m4a"> </audio>
+  <audio id="audioA" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/A.m4a"> </audio>
 
 
   <script>
@@ -127,7 +126,7 @@ h3{
        audioCD.play();
                  }
   </script>
-  <audio id="audioCD" src="CD.m4a" type="audio/m4a"> </audio>
+  <audio id="audioCD" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/CD.m4a"> </audio>
 
   <script>
   function playCE(){
@@ -135,7 +134,7 @@ h3{
        audioCE.play();
                  }
   </script>
-  <audio id="audioCE" src="CE.m4a" type="audio/m4a"> </audio>
+  <audio id="audioCE" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/CE.m4a"> </audio>
 
    <script>
   function playCG(){
@@ -143,7 +142,7 @@ h3{
        audioCG.play();
                  }
   </script>
-  <audio id="audioCG" src="CG.m4a" type="audio/m4a"> </audio>
+  <audio id="audioCG" src="/Users/qq77788qq/Desktop/Sonia home products/web/music note/CG.m4a"> </audio>
 
 
 <!-- mixing color  -->
@@ -178,7 +177,7 @@ mixcolor();
 
 
 <!-- canvas -->
-<svg width="800" height="200">
+<!-- <svg width="800" height="200">
    <rect id="rect1" x="50" y="50" width="600" height="150" fill="#FFFFFF" value="PLAY"/>
    <rect id="redrect" x="50" y="50" width="50" height="150" fill="rgb(196,51,51)" value="PLAY"/>
    <rect id="yellowrect" x="50" y="50" width="50" height="150" fill="rgb(255,217,102)" value="PLAY"/>
@@ -191,7 +190,7 @@ mixcolor();
    <rect id="fakerect" x="50" y="50" width="50" height="150" fill="#FFFFFF" value="PLAY"/>
    
   </svg>
-
+ -->
 
 
 
@@ -199,14 +198,14 @@ mixcolor();
 
 <!-- // Press C D E G A keys to play sound -->
 <!-- <p>onkeydown - <span id="demo2"></span></p> -->
-<script>
+<!-- <script>
 function rectwidth(){
   document.getElementById("smallrect").style.width += 200;
 
   // r += 200 ;g
 }
 
-</script>
+</script> -->
 
 
 
@@ -275,10 +274,10 @@ document.onkeydown = function myFunction() {
 
   if (key == 67) { 
      // 67 is the C key
-    document.getElementById("rect1").style.fill = "rgb(196,51,51)";
-    document.getElementById("redrect").style.width += 500;
+    // document.getElementById("rect1").style.fill = "rgb(196,51,51)";
+    // document.getElementById("redrect").style.width += 500;
     playC();
-    document.getElementById("mixcircle").style.fill = "rgb(196,51,51)";
+    document.getElementById("mixcircle").style.fill = "rgb(0,0,0)";
 
 
     // var i;
@@ -306,40 +305,40 @@ document.onkeydown = function myFunction() {
 
   }
   else if(key == 68){ //68 is the D key
-  document.getElementById("rect1").style.fill = "rgb(255,217,102)";
-  document.getElementById("yellowrect").style.width += 450;
-  document.getElementById("mixcircle").style.fill = "rgb(255,217,102)";
+  // document.getElementById("rect1").style.fill = "rgb(255,217,102)";
+  // document.getElementById("yellowrect").style.width += 450;
+  document.getElementById("mixcircle").style.fill = "rgb(196,51,51)";
   playD();}
   else if (key == 69){ //69 is the E key
-  document.getElementById("rect1").style.fill = "rgb(108,158,235)";
-  document.getElementById("bluerect").style.width += 400;
-  document.getElementById("mixcircle").style.fill = "rgb(108,158,235)"; 
+  // document.getElementById("rect1").style.fill = "rgb(108,158,235)"; 
+  // document.getElementById("bluerect").style.width += 400;
+  document.getElementById("mixcircle").style.fill = "rgb(255,217,102)"; 
   playE();}
   else if (key == 71){ //71 is the G key
-  document.getElementById("rect1").style.fill = "rgb(0,0,0)"; 
-  document.getElementById("blackrect").style.width += 350;
-  document.getElementById("mixcircle").style.fill = "rgb(0,0,0)";
+  // document.getElementById("rect1").style.fill = "rgb(0,0,0)"; 
+  // document.getElementById("blackrect").style.width += 350;
+  document.getElementById("mixcircle").style.fill = "rgb(108,158,235)";
   playG();}
   else if (key == 65){ //65 is the A key
-  document.getElementById("rect1").style.fill = "rgb(255,255,255)"
-  document.getElementById("whiterect").style.width += 300;
+  // document.getElementById("rect1").style.fill = "rgb(255,255,255)"
+  // document.getElementById("whiterect").style.width += 300;
   document.getElementById("mixcircle").style.fill = "rgb(255,255,255)";
   playA();}
 
 
   else if (key== 66){ //66 is the B key, orange
   document.getElementById("mixcircle").style.fill = "rgb(226,134,77)";
-  document.getElementById("orangerect").style.width += 250;
+  // document.getElementById("orangerect").style.width += 250;
   playCD();}
 
   else if (key== 78){ //78 is the N key, purple
   document.getElementById("mixcircle").style.fill = "rgb(153,104,142)";
-  document.getElementById("purplerect").style.width += 200;
+  // document.getElementById("purplerect").style.width += 200;
   playCE();}
 
   else if (key== 77){ //66 is the B key, dark red
   document.getElementById("mixcircle").style.fill = "rgb(98,25,25)";
-  document.getElementById("darkredrect").style.width += 100;
+  // document.getElementById("darkredrect").style.width += 100;
   playCG();}
 
 
