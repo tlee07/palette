@@ -135,21 +135,30 @@ h3{
   </audio>
 
   <script>
-  function playCE(){
+  function playDG(){
        var audio = document.getElementById("audioCE");
-       audioCE.play();
+       audioDG.play();
                  }
   </script>
- <audio id="audioCE" src="CE.m4a" type="audio/m4a" > 
+ <audio id="audioDG" src="purpleDG.m4a" type="audio/m4a" > 
   </audio>
   
    <script>
-  function playCG(){
-       var audio = document.getElementById("audioCG");
-       audioCG.play();
+  function playDA(){
+       var audio = document.getElementById("audioDA");
+       audioDA.play();
                  }
   </script>
- <audio id="audioCG" src="CG.m4a" type="audio/m4a" > 
+ <audio id="audioDA" src="pinkDA.m4a" type="audio/m4a" > 
+  </audio>
+  
+  <script>
+  function playCD(){
+       var audio = document.getElementById("audioCD");
+       audioCD.play();
+                 }
+  </script>
+ <audio id="audioCD" src="darkredCD.m4a" type="audio/m4a" > 
   </audio>
 
 
@@ -342,13 +351,17 @@ document.onkeydown = function myFunction() {
   else if (key== 78){ //78 is the N key, purple
   document.getElementById("mixcircle").style.fill = "rgb(153,104,142)";
   // document.getElementById("purplerect").style.width += 200;
-  playCE();}
+  playDG();}
 
-  else if (key== 77){ //66 is the B key, dark red
+  else if (key== 77){ //77 is the M key, dark red
   document.getElementById("mixcircle").style.fill = "rgb(98,25,25)";
   // document.getElementById("darkredrect").style.width += 100;
-  playCG();}
-
+  playCD();}
+  
+  else if (key== 75){ //75 is the K key, pink
+  document.getElementById("mixcircle").style.fill = "rgb(226,153,152)";
+  // document.getElementById("darkredrect").style.width += 100;
+  playDA();}
 
 
   // else if (char == 115){ //115 is the S key for testing two sounds
